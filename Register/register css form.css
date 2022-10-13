@@ -1,0 +1,66 @@
+/* 인코딩 (한글 안 깨지게) */
+@charset "utf-8";
+
+/* 초기화 코드 (필수, 인터넷 창 틈을 없애줌) */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ccc;
+    padding: 20px;
+}
+/* signup 태그 전부 */
+#signup {}
+
+/* signup 안에 있는 모든 fieldset */
+#signup fieldset {
+
+}
+
+/* signup 안에 fieldset 중 마지막 요소 */
+#signup fieldset:last-of-type {
+
+}
+
+/* 로그인 정보, 개인정보 */
+#signup legend {
+
+}
+
+/* 개인정보 li, 로그인 정보 li */
+#signup ul li {
+
+}
+
+/* label 요소 */
+#signup label {
+
+}
+
+/* 제출 버튼 */
+#signup button {
+
+}
+
+/* 타입 선택자 사용; input 타입이 text, password, email 속성 요소 */
+#signup input[type=text], #signup input[type=password], #signup input[type=tel], #signup input[type=email] {
+
+}
+
+/* input 태그에서 required 속성을 가진 요소 선택 */
+#signup input[required] {
+
+}
+
+/* input 태그에서 readonly 속성을 가진 요소 선택 */
+#signup input[:readonly] {
+
+}
+
+/* 버튼에 마우스 올렸을 때 */
+#signup button:hover {
+
+}

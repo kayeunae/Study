@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체 선택자 */
+        /* * {
+            color: darkcyan;
+            font-style: 20px;
+        } */
+
+        /* 
+        태그 선택자
+        h1 {
+            color: cornflowerblue;
+        } */
+
+        /* .title {
+            font-size: 6px;
+            color: crimson;
+        }
+
+        .on {
+            font-style: italic;
+        }
+
+        #board {
+            color: darkgreen;
+        }
+
+        #contents {
+            color: blueviolet;
+        } */
+
+        #board, #contents, .title, span {
+            color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title on" id="board">자유게시판</h1>
+    <p class="title" id="contents">안녕하세요. 내용입니다.</p>
+    <p>안녕하세요. 내용입니다.</p>
+    <span class="tag on">span태그 입니다.</span>
+    <form>
+        <!-- name 은 서버에 넘겨줄 때, id는 태그에서 쓰는 것 -->
+        <input type="text" name="user_id" id="user_id">
+    </form>
+</body>
+</html>
+
+

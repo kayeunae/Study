@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 : 회원가입</title>
+</head>
+<body>
+    <h1>NAVER</h1>
+    <form>
+        <label for="id"><b>아이디</b></label> <br />
+        <input type="text" id="id" required>@naver.com<br />
+        <br />
+        <label for="pw"><b>비밀번호</b></label> <br />
+        <input type="text" id="pw" required> <br />
+        <br />
+        <label for="pw"><b>비밀번호 재확인</b></label> <br>
+        <input type="text" id="pw" required> <br>
+        <br />
+        <label for="name"><b>이름</b></label> <br />
+        <input type="text" id="name" required> <br />
+        <br />
+        <label for="birth"><b>생년월일</b></label> <br />
+        <input type="text" name="birth" id="birth" placeholder="년(4자)" maxlength="4">
+        <select name="month" id="month">
+            <option value="month">월</option>
+            <option value="jan">1</option>
+            <option value="feb">2</option>
+            <option value="mar">3</option>
+            <option value="apr">4</option>
+            <option value="may">5</option>
+            <option value="jun">6</option>
+            <option value="jul">7</option>
+            <option value="aug">8</option>
+            <option value="sep">9</option>
+            <option value="oct">10</option>
+            <option value="nov">11</option>
+            <option value="dec">12</option>
+        </select>
+        <input type="text" name="day" id="day" placeholder="일">
+        <br />
+        <label for="sex"><b>성별</b></label> <br />
+        <select id="sex" required>
+            <option value="sex1" selected>성별</option>
+            <option value="man">남성</option>
+            <option value="woman">여성</option>
+            <option value="no">선택 안함</option>
+        </select>
+        <br />
+        <br />
+        <label for="mail"><b>본인 확인 이메일</b><small>(선택)</small></label> <br />
+        <input type="email" id="mail" placeholder="선택입력">
+        <br />
+        <br />
+        <label for="phone"><b>휴대전화</b></label> <br />
+        <select name="nation" id="nation">
+            <option value="ko" selected>대한민국 +82</option>
+            <option value="us">미국/캐나다 +1</option>
+            <option value="sing">싱가폴 +65</option>
+            <option value="fr">프랑스 +33</option>
+            <option value="den">덴마크 +45</option>
+        </select>
+        <br />
+        <input type="phone" id="phone" placeholder="전화번호 입력">
+        <input type="submit" value="인증번호 받기"> <br />
+        <input type="text" placeholder="인증번호 입력하세요" required>
+        <br />
+        <br />
+        <input type="submit" value="가입하기">
+    </form>
+</body>
+</html>
