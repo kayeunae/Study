@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        img {border: 0;}
+        ul {list-style: none;}
+        header, footer, section {box-sizing: border-box;}
+
+        /* 공통 버튼 */
+        .wrap .bt {
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid gray;
+            border-radius: 2px;
+            box-sizing: border-box;
+            padding-left: 5px;
+        }
+
+        .wrap .bt > a:hover {
+            text-decoration: underline;
+        }
+
+        /* feed size */
+
+        .feed__box {
+            width: 50px;
+            border: 1px solid #000;
+        }
+
+        /* slide size */
+
+        /* block */
+
+        .header__nav {
+            max-width: 1200px;
+            background: lightblue;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .header__nav > h1 {
+            width: 100px;
+            height: 120px;
+            text-align: center;
+            line-height: 120px;
+        }
+
+        .header__nav > .header__menu {
+            width: calc(100% - 100px);
+            background: lightcoral;
+            text-align: center;
+        }
+
+        .header__nav > .header__sns {
+            width: 250px;
+            float: right;
+        }
+
+        .header__nav > .header__menu > ul,
+        .header__nav > .header__sns > ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .wrap {
+            width: 1440px;
+            margin: 0 auto;
+        }
+
+        section .con {
+            max-width: 100%;
+            margin: 0 auto;
+            height: 100%;
+        }
+
+        .youtube {
+            height: 300px;
+        }
+
+        .youtube__content {
+            background: lightgrey;
+        }
+
+        .intro {
+            height: 230px;
+        }
+
+        .intro__content {
+            background: lightgoldenrodyellow;
+        }
+
+        .intro h1, h4 {
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+
+        .insta {
+            height: 300px;
+        }
+
+        .insta__content {
+            background: lightpink;
+        }
+
+        .insta__content h1 {
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+
+        .insta__content .feed {
+            display: flex;
+            flex-direction: row;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__nav">
+            <h1>logo</h1>
+                <nav class="header__menu">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT</li>
+                        <li>ARTIST</li>
+                        <li>SCHEDULE</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </nav>
+                <nav class="header__sns">
+                    <ul>
+                        <li>insta</li>
+                        <li>youtu</li>
+                        <li>twit</li>
+                        <li>facebook</li>
+                        <li>naver</li>
+                        <li>shop</li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main class="wrap">
+        <section class="youtube">
+            <div class="youtube__content con"></div>
+        </section>
+        <section class="intro">
+            <div class="intro__content con">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repudiandae blanditiis delectus consequuntur eligendi repellendus hic! Possimus laudantium et quam</h1>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta pariatur praesentium nulla labore, </h4>
+                <div class="intro__link bt">
+                    <a href="#">안테나 소개</a>
+                </div>
+            </div>
+        </section>
+        <section class="insta">
+            <div class="insta__content con">
+                <h1>Antenna Feed</h1>
+                <div class="feed">
+                    <div class="feed__box"><p>1</p></div>
+                    <div class="feed__box"><p>2</p></div>
+                    <div class="feed__box"><p>3</p></div>
+                    <div class="feed__box"><p>4</p></div>
+                    <div class="feed__box"><p>5</p></div>
+                    <div class="feed__box"><p>6</p></div>
+                </div>
+            </div>
+        </section>
+        <section class="artist">
+            <div class="artist__content con">
+                <h1>Artists on Antenna</h1>
+                <div class="person__link bt">
+                    <a href="#">아티스트 전체보기</a>
+                </div>
+                <div class="slider">
+                    <div class="slider__box"><p>1</p></div>
+                    <div class="slider__box"><p>2</p></div>
+                    <div class="slider__box"><p>3</p></div>
+                    <div class="slider__box"><p>4</p></div>
+                    <div class="slider__box"><p>5</p></div>
+                    <div class="slider__box"><p>6</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h1>Footer</h1>
+    </footer>
+    
+</body>
+</html>
