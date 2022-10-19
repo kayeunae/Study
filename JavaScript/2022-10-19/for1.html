@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>  
+<body>
     <script>
-        const a = Number(prompt('정수를 입력하세요.', 0));
+        let sum = 0;
+        for (let i = 0; i <= 100; i++) { // 0 ~ 100
+            sum += i // sum = sum+ i;  // 0부터 100까지 합계
+            console.log(`sum: ${sum}`)
+        }
 
-        if (a % 3 === 0 ) {
-            alert("3의 배수")
-        } else {
-            alert("3의 배수 아님")
-        };
+        console.log(`최종 sum: ${sum}`)
     </script>
 </body>
 </html>
