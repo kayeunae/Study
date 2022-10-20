@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = [0, 1, "hi", 10, 76];
+        array.push("bye");
+
+        console.log(array);
+        console.log(array[2]);
+        console.log(array.length);
+
+        array.splice(0, 2);
+
+        console.log(array);
+        console.log(array[2]);
+        console.log(array.length);
+
+        array.splice(1, 2, "i", "am", "kay");
+
+        console.log(array);
+        console.log(array[2]);
+        console.log(array.length);
+
+        array.splice(4, 0, "thanks")
+
+        console.log(array);
+        console.log(array[2]);
+        console.log(array.length);
+        
+        console.log(array.join(" "));
+        
+        array.pop();
+        console.log(array);
+        console.log(array[2]);
+        console.log(array.length);
+
+        console.log(array.pop());
+        console.log(array);
+
+        console.log(array.slice(1));
+        console.log(array);
+        console.log(array.slice(1,4));
+
+    </script>
+</body>
+</html>

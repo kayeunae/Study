@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //화살표 함수 작성법 이용해보기.
+
+        let cnt = 0;
+        
+        let id = setInterval(()=>{
+            console.log(`2초마다 실행됩니다. ${cnt}`)
+            cnt++;
+        }, 2000)
+
+        //종료 시킬 때
+        setTimeout(()=>{
+            console.log(`타이머 종료`)
+            clearInterval(id)
+        }, 5000)
+    </script>
+</body>
+</html>

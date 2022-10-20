@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-        비익명 함수
+        //비익명 함수
         function bmi(w, h) {
             let bmi = w / (h * h);
             return bmi; 
@@ -17,7 +17,22 @@
         const result = bmi(50, 2);
         console.log(result);
 
-        익명 함수
+        //비익명 함수 (선생님 ver.)
+        function bmi(w, h) {
+            let result = w / (h * h);
+            return result; 
+        }
+        console.log(result);
+
+
+        //익명 함수 선생님 
+        const bmi = function(w, h) {
+            let result = w / (h * h);
+            return result;
+        }
+        console.log(result);
+
+        //익명 함수
         const bmi = function(w, h) {
             let bmi = w / (h * h);
             return bmi;
@@ -26,13 +41,20 @@
         const result = bmi(50, 2);
         console.log(result);
 
-        화살표 함수
+        //화살표 함수
         const bmi = (w, h) => {
             let bmi = w / (h * h);
             return bmi;
         }
 
         const result = bmi(50, 2);
+        console.log(result);
+
+        //화살표 함수 선생님
+        const bmi = (w, h) => return w / (h * h);
+        
+        let result = bmi (60, 160)
+        
         console.log(result);
 
 
