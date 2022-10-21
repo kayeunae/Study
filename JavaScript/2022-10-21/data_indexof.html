@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //indexOf: 찾고 싶은 문자
+        let str = "      the,orange,test,haha      "
+        let str1 = "this"
+        let str2 = "apple dog food "
+        
+        const word = str2.indexOf('dog');
+        
+        console.log(word)
+
+        //dog 가 있는 문자열을 반환. 결과값은 6
+        //만약 찾는 것이 없으면 무조건 -1로 반환한다. 아주 유용함 !
+
+        if (word === -1) {
+            alert('찾는 문자가 없습니다.')
+        }
+        </script>
+</body>
+</html>

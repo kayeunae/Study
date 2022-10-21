@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //3. prototype방식
+        //객체 = 속성 + 메소드
+        
+        function Pet(nameVal, ageVal, spcVal) {
+            //속성
+            this.name = nameVal;
+            this.age = ageVal;
+            this.spc = spcVal;
+        }
+
+        //객체명.prototype.함수명 = function() {}
+        Pet.prototype.eat = function(food) {
+            console.log(`${this.name}이가 ${food}를 먹습니다.`)
+        }
+
+        Pet.prototype.agePrint = function() {
+            console.log(`${this.name}이는 ${this.age}살 입니다.`)
+        }
+
+        Pet.prototype.spcPrint = function () {
+            console.log(`${this.name}이의 종은 ${this.spc}입니다.`)
+        }
+
+        //실행
+        const pet = new Pet('구름', 5, '먼치킨')
+        const pet2 = new Pet('별', 3, '러시안블루')
+        const pet3 = new Pet('달', 6, '코숏')
+        const pet4 = new Pet('햇님', 6, '스코티쉬폴드')
+        
+        pet.eat('츄르')
+        pet.agePrint()
+        pet.spcPrint()
+
+        pet2.eat('츄르')
+        pet2.agePrint()
+        pet2.spcPrint()
+
+        pet3.eat('츄르')
+        pet3.agePrint()
+        pet3.spcPrint()
+
+        pet4.eat('츄르')
+        pet4.agePrint()
+        pet4.spcPrint()
+    </script>
+</body>
+</html>

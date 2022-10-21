@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //2. 객체 생성자 방식
+        /*
+        객체명은 첫 글자부터 대문자, 함수명은 두 번째 단어부터 대문자
+        function pet 은 함수로 인식되고
+        function Pet 은 객체로 인식 됨.
+        */
+       //객체 = 속성 + 메소드(함수)
+
+        //객체 정의
+        function Pet (name, age) {
+            //속성
+            this.name = name
+            this.age = age        
+            //메소드
+            this.eat = function (food) {
+                console.log(`${this.name}이가 ${food}를 먹습니다.`)
+            }
+            this.agePrint = function () {
+                console.log(`${this.name}이의 나이는 ${this.age}살 입니다.`)
+            }
+        }
+        
+        //위에서 this.name은 객체(Pet) 안에서만 쓰이는 변수이다.
+        //this.name = name에서 name은 function Pet (name)을 받아온 값이다.
+
+        //객체를 쓰는 이유? 코드의 생산성이 높아진다. 어떻게 ?
+
+        const pet = new Pet("구름", 5);     
+        const pet2 = new Pet("별", 3);
+        const pet3 = new Pet("달", 6);
+        const pet4 = new Pet("해", 6);
+
+        pet.eat('밥')
+        pet.agePrint()
+
+        pet2.eat('밥')
+        pet2.agePrint()
+
+        pet3.eat('밥')
+        pet3.agePrint()
+
+        pet4.eat('밥')
+        pet4.agePrint()
+
+
+
+        //객체가 생성되는 순간 속성에 값이 할당된다.
+
+        /*
+        객체가 생성되는 순간 정의한 객체에 값을 삽입한다.
+        주의. pet, pet2, pet3, pet4가 한 객체에 대입만 하는 것이 아니라
+        4개의 객체가 각각 생성된 것이다.
+        */
+        
+    </script>
+</body>
+</html>

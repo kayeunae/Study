@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //2. 객체 생성자 방식
+        /*
+        객체명은 첫 글자부터 대문자, 함수명은 두 번째 단어부터 대문자
+        function pet 은 함수로 인식되고
+        function Pet 은 객체로 인식 됨.
+        */
+       //객체 = 속성 + 메소드(함수)
+
+        //객체 정의
+        function Pet (name) {
+            //속성
+            this.name = '구름'          //this: 현재 있는 객체를 가리킨다.
+            //메소드
+            this.eat = function (food) {
+                console.log(`구름이가 ${food}를 먹습니다.`)
+            }
+        }
+
+        //객체 생성
+        //pet은 변수, Pet은 객체명
+        const pet1 = new Pet();      //객체 안에 있는 걸 가져다 쓸 수 있다.        
+        console.log(pet.name)       //속성 출력
+        pet.eat('츄르')             //메소드 출력
+
+        
+        //객체를 쓰는 이유? 코드의 생산성이 높아진다. 어떻게 ?
+
+        const pet = new Pet("구름");     
+        const pet2 = new Pet("별");
+        const pet3 = new Pet("달");
+        const pet4 = new Pet("해");
+
+        
+    </script>
+</body>
+</html>
