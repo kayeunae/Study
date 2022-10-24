@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <textarea></textarea>
+    <script>
+    const textarea = document.querySelector('textarea')
+    const h1 = document.querySelector('h1')
+
+    //키보드를 뗐을 때 발생하는 이벤트
+    textarea.addEventListener('keyup', function(){
+        
+        //value : textarea에 쓰인 글자를 가져올 수 있음
+        //vlaue.length : 무자열의 길이를 가져온다
+        const length = textarea.value.length; 
+        h1.textContent = `글자 수: ${length}`
+    }) 
+
+    </script>
+</body>
+</html>

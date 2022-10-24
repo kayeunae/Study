@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        첫 번째 div 
+        <span>테스트입니다</span>
+        <p class="txt">반갑습니다1</p>
+        <p class="txt">반갑습니다2</p>
+        <p class="txt">반갑습니다3</p>
+    </div>
+    <script>
+        const header = document.createElement('h1')
+        console.log(header)
+        document.body.appendChild(header)
+
+        const box = document.querySelector('.box')
+        box.appendChild(header)
+
+        const pTag = document.querySelectorAll('.txt')
+        console.log(pTag)
+
+        pTag.forEach(function(p) {
+            p.style.color = 'pink'
+            p.style.backgroundColor = 'black'
+            p.style.width = '100px'
+        })
+
+        const spanTag = document.querySelector('span')
+        box.removeChild(spanTag)
+
+        const pTag2 = document.querySelector('p')
+        box.removeChild(pTag2)
+        
+    </script>
+</body>
+</html>

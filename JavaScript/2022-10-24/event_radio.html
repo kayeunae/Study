@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>좋아하는 동물 선택</h3>
+    <input type="radio" name="pet" value="강아지">
+    <span>강아지</span>
+    <input type="radio" name="pet" value="고양이">
+    <span>고양이</span>
+    <input type="radio" name="pet" value="햄스터">
+    <span>햄스터</span>
+    <input type="radio" name="pet" value="기타">
+    <span>기타</span>
+    <hr>
+    <h3 id="output"></h3>
+    <script>
+        const jsOutput = document.querySelector('#output')
+        const jsRadios = document.querySelectorAll('[name=pet]')
+        //querySelectorAll을 쓰면 항상 for문을 써서 가져와야 한다.
+
+        jsRadios.forEach(function(radio){
+            radio.addEventListener('change', function(e){
+                const current = e.currentTarget
+                if (current.checked) {  //체크가 되어있는지 확인, 체크 되어있으면 true
+                    jsOutput.textContent = `${current.value}`
+                }
+            })
+        })
+    </script>
+</body>
+</html>
