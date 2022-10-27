@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="wrap">
+            <li id="list_1">
+                <span class="child">1번 자식입니다</span>
+                <span class="child2">2번 자식입니다</span>
+                <span>3번 자식입니다</span>
+            </li>
+            <li id="list_2">리스트2</li>
+            <li id="list_3">리스트3</li>
+        </ul>
+    </div>
+    <script src="../jquery-3.6.1.min.js"></script>
+    <script>
+        $(function(){
+            //parent는 바로 윗 부모 요소, parents는 모든 부모 요소 선택
+            // $('#list_1').parents().css("border", "1px solid red")
+            // $('#list_1').parent().css("border", "1px solid red")
+            // $('#list_1').children().css("border", "1px solid red")
+            // $('#list_1').children('.child').css("border", "1px solid blue")
+        
+            //형제 요소 중 이전과 다음 요소 선택
+            // $(".child2").prev().css("border", "1px solid yellow")
+            // $(".child2").next().css("border", "1px solid navy")
+
+            //모든 형제 요소 선택
+            $(".child2").siblings().css("border", "1px solid skyblue")
+        })
+    </script>
+</body>
+</html>

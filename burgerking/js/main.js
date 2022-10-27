@@ -5,6 +5,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     pagination: {
         el: ".swiper-pagination",
+        type: 'bullets',
     },
     autoplay: {
         delay: 3000,
@@ -13,6 +14,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 //slidechange:이벤트명, function: 콜백함수(이벤트 내용...)
-swiper.on('slideChange', function () {
-    console.log('slide changed');
-});
+// swiper.on('slideChange', function () {
+//     console.log('slide changed');
+// });
