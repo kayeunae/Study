@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100vw;
+    height: 90px;
+    background: green;
+}
+
+
+
+
+footer {
+    width: 100vw;
+    height: 370px;
+    background: gray;
+}
