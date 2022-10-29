@@ -5,20 +5,117 @@
     padding: 0;
 }
 
+ul {list-style: none;}
+
+html {
+    font-size: 10px;
+}
+
 header {
-    width: 100vw;
-    height: 90px;
-    background: green;
+    width: 1062px;
+    height: 130px;
+    background: lightgreen;
+    margin: 0 auto;
 }
 
-header .nav > .logo {
-    
+header .nav {
+    border: 1px solid red;
+    line-height: 90px;
+    /* padding-top: 40px; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
+header .nav > span {
+    width: 25%;
+    font-size: 1.5rem;
+}
 
+header .btn {
+    border: 1px solid navy;
+    width: 170px;
+    float: right;
+    margin-top: 4px;
+    margin-right: 16px;
+    text-align: center;
+}
+
+header .btn .btn__signup,
+header .btn .btn__order {
+    width: 70px;
+    height: 25px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: none;
+    border-radius: 25px;
+    background-color: ivory;
+}
 
 footer {
     width: 100vw;
     height: 370px;
     background: gray;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer .footer__Up{
+    width: 1062px;
+    padding-top: 40px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .menu {
+    border: 1px solid yellow;
+    width: 33.33vw;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;   
+}
+
+footer .menu span {
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+footer .menu > ul {
+    font-size: 1.3rem;
+    line-height: 2.1;
+}
+
+footer .footer__Down {
+    padding-top: 50px;
+    position: relative;
+}
+
+footer .details {
+    border: 1px solid purple;
+    margin: 0 auto;
+    width: 390px;
+    text-align: center;
+}
+
+footer .fb {
+    background: white;
+    margin: 0 auto;
+    width: 65px;
+    height: 45px;
+    position: absolute;
+    left: 850px;
+    bottom: 30px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+}
+
+footer .fb > span {
+    background-color: antiquewhite;
+}
+
+footer .fb > a {
+    border-top: 1px solid black;
 }
