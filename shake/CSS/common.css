@@ -20,8 +20,8 @@ header {
 
 header .nav {
     border: 1px solid red;
+    height: 90px;
     line-height: 90px;
-    /* padding-top: 40px; */
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -52,12 +52,32 @@ header .btn .btn__order {
     background-color: ivory;
 }
 
+header .location {
+    border: 1px solid darkcyan;
+    height: 115px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* display: flex;
+    flex-direction: row; */
+    display: none;
+}
+
+header .location > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 footer {
     width: 100vw;
     height: 370px;
     background: gray;
     text-align: center;
     margin: 0 auto;
+    clear: both;
 }
 
 footer .footer__Up{
@@ -90,7 +110,6 @@ footer .menu > ul {
 
 footer .footer__Down {
     padding-top: 50px;
-    position: relative;
 }
 
 footer .details {
@@ -98,15 +117,16 @@ footer .details {
     margin: 0 auto;
     width: 390px;
     text-align: center;
+    position: relative;
 }
 
 footer .fb {
     background: white;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 65px;
     height: 45px;
     position: absolute;
-    left: 850px;
+    left: 450px;
     bottom: 30px;
     font-size: 1.3rem;
     border-radius: 8px;
