@@ -49,9 +49,7 @@ header .menu_Logo > img {
 }
 
 header .nav .nav__menu {
-    /* width: px;
-    height: 20px;
-    object-fit: contain; */
+    height: 14px;
 }
 
 header .btn {
@@ -69,19 +67,17 @@ header .btn .btn__order {
     margin-left: 4px;
     margin-right: 4px;
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #60ae2b;
     color: white;
 }
 
 header .btn .btn__signup > span,
 header .btn .btn__order > span {
-    margin-bottom: px;
+    /* margin-bottom: px; */
 }
 
 header .location {
-    /* width: 100vw; */
-    height: 115px;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -90,20 +86,26 @@ header .location {
 
 header .location > ul {
     width: 95vw;
-    height: 60px;
     line-height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 28px;
+    /* padding-right: 15px; */
 }
 
 header .location > ul > li {
     flex-direction: column;
-    text-align: center;
-    
+    text-align: center;  
+}
+
+header ul span {
+    color: #60ae2b;
+    font-size: 1.3rem;
+    font-weight: bold;
+    display: block;
+    margin-top: -50px;
 }
 
 main .main__img {

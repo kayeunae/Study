@@ -1,0 +1,56 @@
+main .box {
+    width: 900px;
+    height: 380px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main .box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main div .box__title {
+    font-size: 3.2rem;
+    font-family: "Lobster", sans-serif;
+}
+
+main div .line {
+    width: 100px;
+    height: 1px;
+    margin: 20px auto;
+    background-color: #60ae2b;
+    text-indent: -10000px;
+}
+
+main div .sub__title {
+    padding: 10px;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #777777;
+}
+
+main .box__container {
+    display: flex;
+    flex-direction: row;
+}
+
+main .con__number {
+    font-size: 1.6rem;
+    color: #60ae2b;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+main .con__subs {
+    display: inline-block;
+    margin: 0px 0px 15px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+main .box .box__line {
+    border-right: 1px solid #60ae2b;
+}
